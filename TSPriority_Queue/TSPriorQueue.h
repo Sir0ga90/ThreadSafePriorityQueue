@@ -1,8 +1,6 @@
 #pragma once
 
-#include <queue>
-#include <thread>
-#include <mutex>
+#include"stdafx.h"
 
 template <class T>
 class TSPriorQueue {
