@@ -24,7 +24,7 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\TestTSPriorityQueue\PriorityQueueDerived.h">
+    <ClInclude Include="PriorityQueueDerived.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -33,9 +33,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TSPriority_Queue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\TestTSPriorityQueue\PriorityQueueDerived.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

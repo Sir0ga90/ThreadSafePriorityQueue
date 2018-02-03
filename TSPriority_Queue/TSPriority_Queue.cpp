@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "TSPriorQueue.h"
+#include "PriorityQueueDerived.h"
 
 #define TS_QUEUE
 
@@ -11,7 +12,7 @@ static const int TO_CONSUM = 3;
 static const int TO_PRODUCE = CONSUMERS * TO_CONSUM;
 
 #ifdef TS_QUEUE
-using PriorityQueue = TSPriorQueue<int>;
+using PriorityQueue = PriorityQueueDerived<int>;
 #else 
 using PriorityQueue = std::priority_queue<int>;
 #endif
