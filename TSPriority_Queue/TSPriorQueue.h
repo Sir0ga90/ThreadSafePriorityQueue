@@ -20,7 +20,7 @@ private:
 
 /*==========================================================*/
 template<class T>
-inline void TSPriorQueue<T>::push(const T & _newElem) {
+inline void TSPriorQueue<T>::push(const T& _newElem) {
     std::unique_lock<std::mutex> localLock(mMutex);
     mPriorQueue.push(_newElem);
     localLock.unlock();

@@ -56,6 +56,7 @@ inline T PriorityQueueDerived<T>::top() {
 /*==========================================================*/
 template<class T>
 inline size_t PriorityQueueDerived<T>::size() {
+    std::unique_lock<std::mutex> localLock(mMutex);
     return priority_queue::size();
 }
 

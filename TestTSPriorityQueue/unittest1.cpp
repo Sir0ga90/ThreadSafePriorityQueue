@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
 #include "../TSPriority_Queue/TSPriorQueue.h"
+#include "../TSPriority_Queue/PriorityQueueDerived.h"
 #include <algorithm>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -9,7 +10,7 @@ namespace TestTSPriorityQueue {
     TEST_CLASS(UnitTest1) {
 public:
 
-    TSPriorQueue<int> _pq;
+    PriorityQueueDerived<int> _pq;
 
     TEST_METHOD(TestMethodPush) {
         int myInt = 8;
@@ -25,7 +26,6 @@ public:
 
         Assert::AreEqual(_pq.top(), 20);
     }
-
 
     };
 }
